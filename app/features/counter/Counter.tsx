@@ -1,4 +1,5 @@
 import React from 'react';
+import BackButton from '../../components/BackButton';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import styles from './Counter.css';
@@ -16,11 +17,7 @@ export default function Counter() {
   const value = useSelector(selectCount);
   return (
     <div>
-      <div className={styles.backButton} data-tid="backButton">
-        <Link to={routes.HOME}>
-          <i className="fa fa-arrow-left fa-3x" />
-        </Link>
-      </div>
+      <BackButton />
       <div className={`counter ${styles.counter}`} data-tid="counter">
         {value}
       </div>

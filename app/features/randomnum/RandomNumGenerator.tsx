@@ -9,11 +9,7 @@ export default function RandomNumGenerator() {
 //   const dispatch = useDispatch();
   return (
     <div>
-      <BackButton>
-        <Link to={routes.HOME}>
-          <i className="fa fa-arrow-left fa-3x" />
-        </Link>
-      </BackButton>
+      <BackButton />
     </div>
   );
 }
