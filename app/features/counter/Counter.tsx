@@ -1,9 +1,8 @@
 import React from 'react';
 import BackButton from '../../components/BackButton';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import styles from './Counter.css';
-import routes from '../../constants/routes.json';
+
 import {
   increment,
   decrement,
